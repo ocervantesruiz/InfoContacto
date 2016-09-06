@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Contactos</string>
+
+    <!--DATOS INICIALES-->
+    <string name="sNombreHint">Nombre</string>
+    <string name="sFechaHint">Fecha de nacimiento</string>
+    <string name="sTelefonoHint">Teléfono</string>
+    <string name="sCorreoHint">Correo electrónico</string>
+    <string name="sDescripcionHint">Descripción de contacto</string>
+    <string name="sFechaInicio">05/09/2016</string>
+
+    <string name="sDescripcionConfirmar">Descripción</string>
+    <string name="sTituloConfirmar">Confirmar Datos</string>
+    <string name="sFecha">...</string>
+    <string name="sSiguiente">Siguiente</string>
+    <string name="sEditarDatos">Editar datos</string>
+    <string name="sNombreConfirmar">Nombre</string>
+    <string name="sFechaConfirmar">Fecha de nacimiento</string>
+    <string name="sTelefonoConfirmar">Teléfono</string>
+    <string name="sCorreoConfirmar">Correo electrónico</string>
+
+    <string name="pDatos">datos</string>
+</resources>

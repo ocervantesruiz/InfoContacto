@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="mx.octaviocervantes.contactos.ConfirmarDatos">
+
+    <TextView
+        android:id="@+id/lblTituloConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/fuente_titulo"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/sTituloConfirmar"/>
+
+    <LinearLayout
+        android:id="@+id/llNombreConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_top">
+
+        <ImageView
+            android:id="@+id/imgNombreConfirmar"
+            android:layout_width="@dimen/icono"
+            android:layout_height="@dimen/icono"
+            android:src="@drawable/user_48_cyan"/>
+
+        <TextView
+            android:id="@+id/txtNombreConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fuente_texto"
+            android:text="@string/sNombreConfirmar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFechaConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_top">
+
+        <ImageView
+            android:id="@+id/imgFechaConfirmar"
+            android:layout_width="@dimen/icono"
+            android:layout_height="@dimen/icono"
+            android:src="@drawable/birthday_48_cyan"/>
+
+        <TextView
+            android:id="@+id/txtFechaConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fuente_texto"
+            android:text="@string/sFechaConfirmar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llTelefonoConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="llamar">
+
+        <ImageView
+            android:id="@+id/imgTelefonoConfirmar"
+            android:layout_width="@dimen/icono"
+            android:layout_height="@dimen/icono"
+            android:src="@drawable/cell_phone_48_cyan"/>
+
+        <TextView
+            android:id="@+id/txtTelefonoConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fuente_texto"
+            android:text="@string/sTelefonoConfirmar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCorreoConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="enviarCorreo">
+
+        <ImageView
+            android:id="@+id/imgCorreoConfirmar"
+            android:layout_width="@dimen/icono"
+            android:layout_height="@dimen/icono"
+            android:src="@drawable/message_48_cyan"/>
+
+        <TextView
+            android:id="@+id/txtCorreoConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fuente_texto"
+            android:text="@string/sCorreoConfirmar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_left"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtDescripcionConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textSize="@dimen/fuente_texto"
+        android:text="@string/sDescripcionConfirmar"/>
+
+    <Button
+        android:id="@+id/btnEditarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sEditarDatos"
+        android:layout_marginTop="@dimen/margin_top"
+        android:theme="@style/estiloBoton"/>
+</LinearLayout>

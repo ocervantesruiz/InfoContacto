@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="mx.octaviocervantes.contactos.DatosContacto"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/llDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/sNombreHint"
+            android:textSize="@dimen/fuente_texto"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <TextView
+            android:id="@+id/lblFecha"
+            android:textSize="@dimen/fuente_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sFechaHint"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <LinearLayout
+            android:id="@+id/llFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin_top">
+
+            <TextView
+                android:id="@+id/txtFecha"
+                android:layout_width="@dimen/width_fecha"
+                android:textSize="@dimen/fuente_fecha"
+                android:layout_height="@dimen/height_fecha"
+                android:text="@string/sFechaInicio"/>
+
+            <Button
+                android:id="@+id/btnFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sFecha"
+                android:onClick="mostrarDialogoDeFecha"
+                android:theme="@style/estiloBoton"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sTelefonoHint"
+            android:textSize="@dimen/fuente_texto"
+            android:layout_marginTop="@dimen/margin_top">
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/sCorreoHint"
+            android:textSize="@dimen/fuente_texto"
+            android:layout_marginTop="@dimen/margin_top">
+        </android.support.design.widget.TextInputEditText>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_descripcion"
+            android:inputType="textMultiLine"
+            android:hint="@string/sDescripcionHint"
+            android:textSize="@dimen/fuente_texto"
+            android:layout_marginTop="@dimen/margin_top">
+        </android.support.design.widget.TextInputEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/llDatos"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sSiguiente"
+            android:theme="@style/estiloBoton"
+            />
+    </LinearLayout>
+</LinearLayout>
