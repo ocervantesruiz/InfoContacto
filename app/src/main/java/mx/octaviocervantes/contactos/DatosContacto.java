@@ -94,13 +94,4 @@ public class DatosContacto extends AppCompatActivity {
         newFragment.show(getSupportFragmentManager(), "Seleccionar Fecha");
 
     }
-
-    public boolean onKeyDown(int keyCode, KeyEvent evt){
-        if (keyCode == KeyEvent.KEYCODE_BACK){
-            System.exit(0);
-        }
-
-        return super.onKeyDown(keyCode, evt);
-    }
-
 }
